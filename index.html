@@ -2,30 +2,48 @@
 <html lang="en">
 
 <Style>
+    a
+    {
+        color: inherit;
+        text-decoration: none;
+    }
     .Default
     {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         line-height: 30px;
+        background-color:blanchedalmond;
+        margin: 0;
     }
     header
     {
         font-weight: bolder;
         font-size: 23px;
     }
+    .Header
+    {
+        font-weight: bolder;
+        background-color:rgb(218, 84, 84);
+        margin: 0%;
+
+        overflow: hidden;
+        padding: 20px 10px;
+    }
+    .Title
+    {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
     .ExternalLinks
     {
-        font-size: 20px;
-        font-weight: bolder;
-        background-color: aqua;
-        text-align: right;
-        padding-inline-end: 5%;
-        line-height: 50px;
+        float: right;
+        padding: 14px 16px;
     }
     .About
     {
         padding-top: 25px;
-        padding-left: 10px;
+        padding-left: 150px;
         padding-right: 40px;
         display: flex;
     }
@@ -36,16 +54,23 @@
         max-width: 250px;
         max-height: 250px;
     }
+   
     .Showcase
     {
         padding-top: 25px;
     }
+    
     .Game
     {
         background-color: blueviolet;
         display: flex;
-        padding: 10px;
-        margin: 10px;
+        padding: 5px;
+        margin: 20px;
+    }
+    
+    .Game:hover
+    {
+        background-color: rgb(96, 49, 139);
     }
     .GameImg
     {
@@ -61,26 +86,25 @@
     }
     .Icon
     {
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
     }
 </Style>
-
-<div class="ExternalLinks"> 
-    <a href="https://github.com/EndMePlsKeKW" target="_blank">
-        Student Github
-    </a>
-
-    <a href="https://github.com/CanYouBunnyHop" target="_blank">
-        <img src="./GithubLogo.png" class="Icon"> 
-    </a>
-    
-    <a href="https://canyoubunnyhop.itch.io/" target="_blank">
-        <img src="./ItchioLogo.png" class="Icon"> 
-    </a>
-</div>
-
-<body class="Default"></body>
+<body class="Default">
+        <div class="Header">
+            <a class="Title">CanYouBunnyHop</a>
+            <div class="ExternalLinks">
+                <a href="https://github.com/EndMePlsKeKW"target="_blank" >
+                    <img src="./GithubLogo.png" class="Icon">
+                </a>
+                <a href="https://github.com/CanYouBunnyHop"target="_blank">
+                    <img src="./GithubLogo.png" class="Icon">
+                </a>
+                <a href="https://canyoubunnyhop.itch.io/" target="_blank">
+                    <img src="./itch-io-icon.png" class="Icon">
+                </a>
+            </div>
+        </div> 
     <div class="About">
         <span>
             <img class="Portrait" src="./image.png">
@@ -97,27 +121,24 @@
         
     </div>
     <div class="Showcase">
+        <a href="https://canyoubunnyhop.itch.io/heatw" target="_blank" class="Game">
+                </span>
+                <span>
+                        <img class="GameImg" src="./HeatWave.png">
+                </span>
+                <span>
+                    <header>Heat Wave</header>
+        
+                    <p class="Description">
+                        Vampire survivor clone I made in my first game jam with one week time.
+                    </p>
+                </span>
 
-        <div class="Game">
-            <span>
-                <a href="https://canyoubunnyhop.itch.io/heatw" target="_blank">
-                    <img class="GameImg" src="./HeatWave.png">
-                </a>
-            </span>
-            <span>
-                <header>Heat Wave</header>
-    
-                <p class="Description">
-                    Vampire survivor clone I made in my first game jam with one week time.
-                </p>
-            </span>
-        </div>
+        </a>
 
-        <div class="Game">
+        <a href="https://canyoubunnyhop.itch.io/blue-square-and-yellow-circle" target="_blank" class="Game">
             <span>
-                <a href="https://canyoubunnyhop.itch.io/blue-square-and-yellow-circle" target="_blank">
                     <img class="GameImg" src="./BSYC.png">
-                </a>
             </span>
             <span>
                 <header>Blue Square and Yellow Circle</header>
@@ -126,14 +147,13 @@
                     Puzzle platformer I made in the span of three weeks. 
                     I'm terrible at naming things.
                 </p>
-            </span>
-        </div>
 
-        <div class="Game">
+            </span>
+        </a>
+
+        <a href="https://store.steampowered.com/app/2176310/Axiom/" target="_blank" class="Game">
             <span>
-                <a href="https://store.steampowered.com/app/2176310/Axiom/" target="_blank">
-                    <img class="GameImg" src="./Axiom.jpg">
-                </a>
+                <img class="GameImg" src="./Axiom.jpg">
             </span>
             <span>
                 <header>Axiom</header>
@@ -144,13 +164,11 @@
                     and plays audio and correspoding text.
                 </p>
             </span>
-        </div>
+        </a>
 
-        <div class="Game">
+        <a href="https://sonny-yang.itch.io/spytraining-vr" target="_blank" class="Game">
             <span>
-                <a href="https://sonny-yang.itch.io/spytraining-vr" target="_blank">
-                    <img class="GameImg" src="./vrninjasw.gif">
-                </a>
+                <img class="GameImg" src="./vrninjasw.gif">
             </span>
             <span>
                 <header>Spy Training Vr</header>
@@ -159,13 +177,11 @@
                     I made the Ninja training level using synty pack and EzySlice. Totally not biased, it's extremely fun.
                 </p>
             </span>
-        </div>
+        </a>
 
-        <div class="Game">
+        <a href="https://espace.curtin.edu.au/handle/20.500.11937/92183" target="_blank" class="Game">
             <span>
-                <a href="https://espace.curtin.edu.au/handle/20.500.11937/92183" target="_blank">
-                    <img class="GameImg" src="./CardiacHoloLensDemo.gif">
-                </a>
+                <img class="GameImg" src="./CardiacHoloLensDemo.gif">
             </span>
             <span>
                 <header>Hololens Cardiac Educational Tool</header>
@@ -178,15 +194,13 @@
                 </p>
                 
             </span>
-        </div>
+        </a>
 
-        <div class="Game">
-            <span>
-                <a href="https://chicken-salt.itch.io/snackattack" target="_blank">
-                    <img class="GameImg" src="./snack.png">
-                </a>
+        <a class="Game" href="https://chicken-salt.itch.io/snackattack" target="_blank">
+
+            <span >
+                <img class="GameImg" src="./snack.png">
             </span>
-            
             <span>
                 <header>Snack Attack</header>
     
@@ -196,7 +210,7 @@
                 </p>
 
             </span>
-        </div>
+        </a>
 
     </div>
     
